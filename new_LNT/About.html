@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | LinkNetra IT Systems - Smart & Secure IT Solutions</title>
+    <meta name="description" content="End-to-end IT Services: Network Security, CCTV, IT Consulting, AMC, Software Licensing & Active/Passive Networking across Maharashtra.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/images/favicon img.png" type="image/jpeg">
+    <link rel="stylesheet" href="./assets/css/about.css">
+
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/918668831220" target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#27AE60] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-all">
+        <i class="fab fa-whatsapp text-4xl"></i>
+    </a>
+
+       <!-- NAVBAR - SAME AS HOMEPAGE -->
+ <header class="sticky top-0 z-50 bg-white/40 backdrop-blur-2xl border-b border-white/30 shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="flex items-center gap-4 hover:scale-105 transition-all duration-300">
+                <img src="./assets/images/Logo.jpeg" alt="LinkNetra Logo" class="h-14 md:h-16 rounded-2xl shadow-lg object-cover" loading="lazy"
+                     onerror="this.src='https://placehold.co/80x80/06314F/FFFFFF?text=LNK'">
+                <div class="leading-tight">
+                    <h1 class="text-2xl md:text-3xl font-black text-[#06314F] tracking-tighter">LINKNETRA</h1>
+                    <p class="text-[#0092D6] font-bold text-sm tracking-widest">IT SYSTEMS</p>
+                </div>
+            </a>
+
+           <nav class="hidden lg:flex items-center gap-4">
+                <a href="index.html" class="nav-pill">Home</a>
+                <a href="About.html" class="nav-pill">About</a>
+                <div class="relative">
+                    <button id="servicesToggle" class="nav-pill flex items-center gap-2">
+                        Services <i id="servicesIcon" class="fas fa-chevron-down text-sm transition-transform duration-300"></i>
+                    </button>
+                    <div id="servicesDropdown" class="dropdown-box hidden">
+                        <a href="Services.html" class="dropdown-link">Network Solutions</a>
+                        <a href="Services.html" class="dropdown-link">Cyber Security</a>
+                        <a href="Services.html" class="dropdown-link">Physical Security</a>
+                        <a href="Services.html" class="dropdown-link">IT Consulting</a>
+                        <a href="Services.html" class="dropdown-link">AMC Support</a>
+                    </div>
+                </div>
+                <a href="Contact.html" class="nav-pill">Contact</a>
+                <a href="./assets/images/linknetra IT Solution.pdf" class="px-7 py-3 rounded-full bg-gradient-to-r from-[#0092D6] to-[#27AE60] text-white font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition">
+                    Download Profile
+                </a>
+            </nav>
+
+
+            <button id="menu-btn" class="lg:hidden text-3xl text-[#06314F] hover:scale-110 transition">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+         <div id="mobile-menu" class="hidden lg:hidden bg-white/95 backdrop-blur-xl shadow-2xl border-t border-gray-200">
+            <nav class="flex flex-col py-6 px-8 space-y-4 text-lg font-medium">
+                <a href="index.html" class="py-3 hover:text-[#0092D6] transition">Home</a>
+                <a href="About.html" class="py-3 hover:text-[#0092D6] transition">About</a>
+                <details class="bg-gray-100 rounded-2xl overflow-hidden">
+                    <summary class="cursor-pointer py-4 px-6 font-bold text-[#06314F]">Services</summary>
+                    <div class="px-6 pb-4 space-y-3 bg-gray-50">
+                        <a href="Services.html" class="block py-2 hover:text-[#0092D6]">Network Solutions</a>
+                        <a href="Services.html#cyber" class="block py-2 hover:text-[#0092D6]">Cyber Security</a>
+                        <a href="Services.html#physical" class="block py-2 hover:text-[#0092D6]">Physical Security</a>
+                        <a href="Services.html#consulting" class="block py-2 hover:text-[#0092D6]">IT Consulting</a>
+                        <a href="Services.html#amc" class="block py-2 hover:text-[#0092D6]">AMC Support</a>
+                    </div>
+                </details>
+                <a href="Contact.html" class="py-3 hover:text-[#0092D6] transition">Contact</a>
+                <a href="./assets/images/linknetra IT Solution.pdf" class="py-4 bg-gradient-to-r from-[#0092D6] to-[#27AE60] text-white text-center rounded-full font-bold shadow-lg">Download Profile</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
+        <div class="hero-bg absolute inset-0" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80');"></div>
+        <div class="absolute inset-0 bg-gradient-to-br from-[#06314F]/95 via-[#06314F]/85 to-[#021826]/90"></div>
+
+        <div class="absolute inset-0 opacity-30 pointer-events-none">
+            <div class="absolute top-20 left-10 w-96 h-96 bg-[#0092D6] rounded-full blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-32 right-20 w-80 h-80 bg-[#27AE60] rounded-full blur-3xl animate-pulse delay-1000"></div>
+        </div>
+
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-black mb-6 leading-tight">
+                Comprehensive IT Solutions<br>
+                <span class="text-[#27AE60]">Built for Your Success</span>
+            </h1>
+            <p class="text-xl md:text-2xl lg:text-3xl text-gray-200 max-w-5xl mx-auto leading-relaxed">
+                From enterprise networking to cyber defense — we deliver end-to-end solutions .
+            </p>
+            <div class="mt-12">
+                <a href="#services" class="inline-block bg-gradient-to-r from-[#0092D6] to-[#27AE60] text-white px-12 py-5 rounded-full text-xl font-bold shadow-2xl hover:scale-105 transition-all">
+                    Explore All Services
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-4xl text-white/70"></i>
+        </div>
+    </section>
+
+     <!-- NEW MODERN ABOUT SECTION – Premium & Eye-Catching -->
+<section id="about" class="py-24 md:py-32 bg-gradient-to-br from-[#06314F] to-[#0f4970] text-white relative overflow-hidden">
+    <!-- Background Decorative Elements -->
+    <div class="absolute inset-0 opacity-20">
+        <div class="absolute top-20 left-10 w-96 h-96 bg-[#0092D6] rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-32 right-20 w-80 h-80 bg-[#27AE60] rounded-full blur-3xl animate-pulse delay-1000"></div>
+    </div>
+
+    <div class="container mx-auto px-6 max-w-7xl relative z-10">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+            <!-- LEFT: Dynamic Heading + Text with Accent Bars -->
+            <div class="space-y-8 fade-in-up">
+                <div>
+                    <p class="text-[#0092D6] font-bold uppercase tracking-widest text-sm mb-3">
+                        Your Trusted IT Partner in Maharashtra
+                    </p>
+                    <h2 class="text-5xl md:text-6xl lg:text-7xl font-black leading-tight">
+                        About <span class="text-[#27AE60]">LinkNetra</span><br>
+                        <span class="text-[#0092D6]">IT Systems</span>
+                    </h2>
+                    <div class="flex items-center gap-6 mt-6">
+                        <div class="h-1 w-24 bg-[#0092D6]"></div>
+                        <div class="h-1 w-12 bg-[#27AE60]"></div>
+                        <div class="h-1 w-32 bg-white/30"></div>
+                    </div>
+                </div>
+
+                <div class="space-y-6 text-lg leading-relaxed text-gray-200">
+                    <p>
+                        In today’s connected world, <strong class="text-[#27AE60]">reliable networking</strong> is the backbone of every modern enterprise — and <strong>LinkNetra IT Systems</strong> stands at the forefront of delivering secure, intelligent, and future-ready IT solutions across Maharashtra.
+                    </p>
+                    <p>
+                        We design and deploy <strong class="text-[#0092D6]">end-to-end active and passive networking solutions</strong>, including structured cabling, fiber optics, Wi-Fi controllers, enterprise switches, routers, and firewalls — ensuring seamless communication across data, voice, and video with <strong>maximum uptime</strong>.
+                    </p>
+                    <p>
+                        Our expertise covers enterprise-grade switches, secure gateways, high-performance copper/fiber cabling, access points, racks, and cable management systems built for <strong class="text-[#27AE60]">long-term stability and scalability</strong>.
+                    </p>
+                    <p class="text-xl font-semibold text-white bg-gradient-to-r from-[#0092D6]/20 to-[#27AE60]/20 p-6 rounded-2xl border-l-4 border-[#27AE60]">
+                        Businesses choose LinkNetra for <span class="text-[#27AE60]">transparent service</span>, fast support, genuine software licensing, cost-effective AMC plans, and solutions aligned with global standards.
+                    </p>
+                </div>
+
+               
+            </div>
+
+            <!-- RIGHT: Stunning Image with Floating Card Effect -->
+            <div class="relative fade-in-up">
+                <div class="relative group">
+                    <!-- Main Image -->
+                    <div class="rounded-3xl overflow-hidden shadow-3xl border-8 border-white/20 transform hover:scale-105 transition-all duration-700">
+                        <img src="./assets/images/Why Choose LinkNetra IT Systems.png" 
+                             alt="LinkNetra IT Infrastructure"
+                             class="w-full h-auto object-cover"
+                             onerror="this.onerror=null; this.src='https://placehold.co/800x900/0092D6/FFFFFF?text=LinkNetra\nExcellence';">
+                    </div>
+
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-6 -left-6 bg-gradient-to-br from-[#0092D6] to-[#27AE60] text-white p-6 rounded-2xl shadow-2xl border-4 border-white">
+                        <p class="text-4xl font-black">100%</p>
+                        <p class="text-lg font-bold">Client Satisfaction</p>
+                    </div>
+
+                    <!-- Decorative Lines -->
+                    <div class="absolute top-10 -right-10 w-32 h-32 border-8 border-[#27AE60]/30 rounded-full"></div>
+                    <div class="absolute bottom-20 -left-12 w-24 h-24 border-8 border-[#0092D6]/30 rounded-full"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <!-- OUR CORE SERVICES - PREMIUM CARDS -->
+    <section id="services" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in-up">
+                <p class="text-sm font-bold uppercase tracking-widest text-[#0092D6] mb-3">OUR EXPERTISE</p>
+                <h2 class="text-5xl md:text-6xl font-black text-[#06314F]">Our Core Services</h2>
+                <p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">End-to-end IT solutions engineered for performance, security, and growth</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <!-- Network Solutions -->
+                <div id="network" class="group relative bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl service-card fade-in-up transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-b from-[#0092D6]/90 to-[#27AE60]/90 translate-y-[-100%] group-hover:translate-y-0 transition-transform duration-700 ease-out z-10"></div>
+                    <div class="relative z-20 p-8 space-y-5">
+                        <div class="w-16 h-16 bg-gradient-to-br from-[#0092D6] to-[#27AE60] rounded-2xl flex items-center justify-center text-white text-3xl shadow-lg">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-[#06314F] group-hover:text-white transition-colors duration-500">
+                            Active & Passive Networking
+                        </h3>
+                        <p class="text-gray-600 group-hover:text-white/90 transition-colors duration-500 leading-relaxed">
+                            End-to-end network infrastructure: structured cabling, fiber optics, switches, routers, Wi-Fi controllers, and unified voice/video/data solutions.
+                        </p>
+                    </div>
+                    <div class="relative z-20 px-8 pb-8">
+                        <a href="testing_Contact.html" class="inline-flex items-center gap-3 text-[#0092D6] font-bold group-hover:text-white transition-colors duration-500 hover:gap-5">
+                            Get Quote <i class="fas fa-arrow-right text-sm"></i>
+                        </a>
+                    </div>
+                    <div class="h-2 bg-gradient-to-r from-[#0092D6] to-[#27AE60] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></div>
+                </div>
+
+                <!-- Cyber Security -->
+                <div id="cyber" class="group relative bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl service-card fade-in-up transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-b from-[#e74c3c] to-[#c0392b] translate-y-[-100%] group-hover:translate-y-0 transition-transform duration-700 ease-out z-10"></div>
+                    <div class="relative z-20 p-8 space-y-5">
+                        <div class="w-16 h-16 bg-gradient-to-br from-[#e74c3c] to-[#c0392b] rounded-2xl flex items-center justify-center text-white text-3xl shadow-lg">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-[#06314F] group-hover:text-white transition-colors duration-500">
+                            Network Security Solutions
+                        </h3>
+                        <p class="text-gray-600 group-hover:text-white/90 transition-colors duration-500 leading-relaxed">
+                            Fortinet-powered firewalls, endpoint protection, threat intelligence, and 24/7 monitoring.
+                        </p>
+                    </div>
+                    <div class="relative z-20 px-8 pb-8">
+                        <a href="testing_Contact.html" class="inline-flex items-center gap-3 text-[#e74c3c] font-bold group-hover:text-white transition-colors duration-500 hover:gap-5">
+                            Secure My Network <i class="fas fa-arrow-right text-sm"></i>
+                        </a>
+                    </div>
+                    <div class="h-2 bg-gradient-to-r from-[#e74c3c] to-[#c0392b] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></div>
+                </div>
+
+                <!-- Physical Security -->
+                <div id="physical" class="group relative bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl service-card fade-in-up transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-b from-[#9b59b6] to-[#8e44ad] translate-y-[-100%] group-hover:translate-y-0 transition-transform duration-700 ease-out z-10"></div>
+                    <div class="relative z-20 p-8 space-y-5">
+                        <div class="w-16 h-16 bg-gradient-to-br from-[#9b59b6] to-[#8e44ad] rounded-2xl flex items-center justify-center text-white text-3xl shadow-lg">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-[#06314F] group-hover:text-white transition-colors duration-500">
+                            CCTV & Biometric Systems
+                        </h3>
+                        <p class="text-gray-600 group-hover:text-white/90 transition-colors duration-500 leading-relaxed">
+                            HD surveillance, access control, facial recognition, and biometric attendance solutions.
+                        </p>
+                    </div>
+                    <div class="relative z-20 px-8 pb-8">
+                        <a href="testing_Contact.html" class="inline-flex items-center gap-3 text-[#9b59b6] font-bold group-hover:text-white transition-colors duration-500 hover:gap-5">
+                            Secure Premises <i class="fas fa-arrow-right text-sm"></i>
+                        </a>
+                    </div>
+                    <div class="h-2 bg-gradient-to-r from-[#9b59b6] to-[#8e44ad] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></div>
+                </div>
+
+                <!-- IT Consulting -->
+                <div id="consulting" class="group relative bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl service-card fade-in-up transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-b from-[#3498db] to-[#2980b9] translate-y-[-100%] group-hover:translate-y-0 transition-transform duration-700 ease-out z-10"></div>
+                    <div class="relative z-20 p-8 space-y-5">
+                        <div class="w-16 h-16 bg-gradient-to-br from-[#3498db] to-[#2980b9] rounded-2xl flex items-center justify-center text-white text-3xl shadow-lg">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-[#06314F] group-hover:text-white transition-colors duration-500">
+                            IT Consulting & Advisory
+                        </h3>
+                        <p class="text-gray-600 group-hover:text-white/90 transition-colors duration-500 leading-relaxed">
+                            Digital transformation, cloud strategy, IT roadmap planning, and cost optimization.
+                        </p>
+                    </div>
+                    <div class="relative z-20 px-8 pb-8">
+                        <a href="testing_Contact.html" class="inline-flex items-center gap-3 text-[#3498db] font-bold group-hover:text-white transition-colors duration-500 hover:gap-5">
+                            Start Consulting <i class="fas fa-arrow-right text-sm"></i>
+                        </a>
+                    </div>
+                    <div class="h-2 bg-gradient-to-r from-[#3498db] to-[#2980b9] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></div>
+                </div>
+
+                <!-- AMC -->
+                <div id="amc" class="group relative bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl service-card fade-in-up transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-b from-[#27AE60] to-[#2ecc71] translate-y-[-100%] group-hover:translate-y-0 transition-transform duration-700 ease-out z-10"></div>
+                    <div class="relative z-20 p-8 space-y-5">
+                        <div class="w-16 h-16 bg-gradient-to-br from-[#27AE60] to-[#2ecc71] rounded-2xl flex items-center justify-center text-white text-3xl shadow-lg">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-[#06314F] group-hover:text-white transition-colors duration-500">
+                            Annual Maintenance Contracts
+                        </h3>
+                        <p class="text-gray-600 group-hover:text-white/90 transition-colors duration-500 leading-relaxed">
+                            Proactive support, preventive maintenance, and 24/7 priority assistance.
+                        </p>
+                    </div>
+                    <div class="relative z-20 px-8 pb-8">
+                        <a href="testing_Contact.html" class="inline-flex items-center gap-3 text-[#27AE60] font-bold group-hover:text-white transition-colors duration-500 hover:gap-5">
+                            Get AMC Plan <i class="fas fa-arrow-right text-sm"></i>
+                        </a>
+                    </div>
+                    <div class="h-2 bg-gradient-to-r from-[#27AE60] to-[#2ecc71] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></div>
+                </div>
+
+                <!-- Software Licensing -->
+                <div id="licensing" class="group relative bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl service-card fade-in-up transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-b from-[#2c3e50] to-[#34495e] translate-y-[-100%] group-hover:translate-y-0 transition-transform duration-700 ease-out z-10"></div>
+                    <div class="relative z-20 p-8 space-y-5">
+                        <div class="w-16 h-16 bg-gradient-to-br from-[#2c3e50] to-[#34495e] rounded-2xl flex items-center justify-center text-white text-3xl shadow-lg">
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-[#06314F] group-hover:text-white transition-colors duration-500">
+                            Software Licensing & Renewals
+                        </h3>
+                        <p class="text-gray-600 group-hover:text-white/90 transition-colors duration-500 leading-relaxed">
+                            Genuine Microsoft, Adobe, Autodesk, and security software with compliance management.
+                        </p>
+                    </div>
+                    <div class="relative z-20 px-8 pb-8">
+                        <a href="testing_Contact.html" class="inline-flex items-center gap-3 text-[#2c3e50] font-bold group-hover:text-white transition-colors duration-500 hover:gap-5">
+                            Manage Licenses <i class="fas fa-arrow-right text-sm"></i>
+                        </a>
+                    </div>
+                    <div class="h-2 bg-gradient-to-r from-[#2c3e50] to-[#34495e] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--New Section Added-->
+
+    
+   <!-- TRUSTED PARTNERS – Dual Direction Marquee -->
+<section class="py-20 bg-white overflow-hidden">
+    <div class="container mx-auto px-6">
+
+        <!-- Header -->
+       <div class="text-center mb-16 fade-in-up">
+    <p class="text-sm font-bold uppercase tracking-widest text-[#0092D6] mb-4">
+        Powered by Industry Leaders
+    </p>
+    <h2 class="text-5xl md:text-6xl font-black text-[#06314F] leading-tight">
+        Technology <span class="text-[#27AE60]">We Trust</span>
+    </h2>
+    <p class="mt-6 text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+        We deal with the world's most trusted brands to deliver high-quality services.
+        <span class="font-bold text-[#27AE60]">reliable</span>,
+        <span class="font-bold text-[#0092D6]">innovative</span>, and
+        <span class="font-bold text-[#06314F]">future-proof</span> IT solutions.
+    </p>
+</div>
+
+
+       <!-- Marquee Wrapper -->
+<div class="space-y-10">
+
+    <!-- ROW 1 → RIGHT -->
+    <div class="marquee-wrapper">
+        <div class="marquee marquee-right">
+
+            <!-- Original order (shuffled) -->
+           <img src="./assets/images/Microsoft.jpg" alt="Microsoft">
+                    <img src="./assets/images/Google.webp" alt="Google">
+                    <img src="./assets/images/AWS.png" alt="Amazon Web Services">
+                    <img src="./assets/images/Cisco.png" alt="Cisco">
+                    <img src="./assets/images/IBM.png" alt="IBM">
+                    <img src="./assets/images/Intel.png" alt="Intel">
+                    <img src="./assets/images/Fortinet.png" alt="Fortinet">
+                    <img src="./assets/images/Hikvision.png" alt="Hikvision">
+                    <img src="./assets/images/Dlink.png" alt="D-Link">
+                    <img src="./assets/images/Safetica.png" alt="Safetica">
+
+                    <img src="./assets/images/Microsoft.jpg" alt="Microsoft">
+                    <img src="./assets/images/Google.webp" alt="Google">
+                    <img src="./assets/images/AWS.png" alt="Amazon Web Services">
+                    <img src="./assets/images/Cisco.png" alt="Cisco">
+                    <img src="./assets/images/IBM.png" alt="IBM">
+                    <img src="./assets/images/Intel.png" alt="Intel">
+                    <img src="./assets/images/Fortinet.png" alt="Fortinet">
+                    <img src="./assets/images/Hikvision.png" alt="Hikvision">
+                    <img src="./assets/images/Dlink.png" alt="D-Link">
+                    <img src="./assets/images/Safetica.png" alt="Safetica">
+        </div>
+    </div>
+
+    <!-- ROW 2 ← LEFT -->
+    <div class="marquee-wrapper">
+        <div class="marquee marquee-left">
+
+            <img src="./assets/images/Adobe logo.png" alt="Adobe">
+                    <img src="./assets/images/Epson.png" alt="Epson">
+                    <img src="./assets/images/HP.png" alt="HP">
+                    <img src="./assets/images/Acer.png" alt="Acer">
+                    <img src="./assets/images/Brother.png" alt="Brother">
+                    <img src="./assets/images/Veritas.png" alt="Veritas">
+                    <img src="./assets/images/Dell.png" alt="Dell">
+                    <img src="./assets/images/Logitech.png" alt="Logitech">
+                    <img src="./assets/images/Fortinet.png" alt="Fortinet">
+                    <img src="./assets/images/Hikvision.png" alt="Hikvision">
+                    <img src="./assets/images/Dlink.png" alt="D-Link">
+                    <img src="./assets/images/Safetica.png" alt="Safetica">
+
+                    <!-- Duplicate set (for marquee smooth loop) -->
+                    <img src="./assets/images/Adobe logo.png" alt="Adobe">
+                    <img src="./assets/images/Epson.png" alt="Epson">
+                    <img src="./assets/images/HP.png" alt="HP">
+                    <img src="./assets/images/Acer.png" alt="Acer">
+                    <img src="./assets/images/Brother.png" alt="Brother">
+                    <img src="./assets/images/Veritas.png" alt="Veritas">
+                    <img src="./assets/images/Dell.png" alt="Dell">
+                    <img src="./assets/images/Logitech.png" alt="Logitech">
+                    <img src="./assets/images/Fortinet.png" alt="Fortinet">
+                    <img src="./assets/images/Hikvision.png" alt="Hikvision">
+                    <img src="./assets/images/Dlink.png" alt="D-Link">
+                    <img src="./assets/images/Safetica.png" alt="Safetica">
+
+        </div>
+    </div>
+
+</div>
+
+    </div>
+</section>
+
+    <!-- CTA -->
+    <section class="py-24 bg-gradient-to-r from-[#0092D6] to-[#27AE60] text-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl md:text-6xl font-black mb-6">Ready to Secure & Scale Your IT?</h2>
+            <p class="text-xl mb-10 max-w-3xl mx-auto">Get a free consultation and network audit from Maharashtra’s trusted IT partner.</p>
+            <a href="Contact.html" class="inline-block bg-white text-primary-dark px-12 py-6 rounded-full text-xl font-bold hover:scale-110 transition-all shadow-2xl">
+                Start Your Project Today
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <!-- Footer -->
+    <footer class="relative bg-[#06314F] text-white overflow-hidden">
+        <div class="footer-wave"></div>
+        <div class="container mx-auto px-6 pt-32 pb-16 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <!-- Company Info & Social -->
+                <div>
+                    <div class="flex items-center space-x-4 mb-6">
+                        <img src="./assets/images/Logo.jpeg" alt="LinkNetra" class="h-16 rounded-lg shadow-lg"
+                             onerror="this.src='https://placehold.co/64x64/FFFFFF/06314F?text=LNK';">
+                        <div>
+                            <h3 class="text-3xl font-black">LINKNETRA</h3>
+                            <p class="text-[#0092D6] font-bold text-xl">IT SYSTEMS</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Trusted IT Infrastructure & Security in Maharashtra
+                    </p>
+                    <div class="flex space-x-6 mt-8">
+    
+    <!-- WhatsApp -->
+    <a href="https://wa.me/918668831220" 
+       target="_blank"
+       aria-label="WhatsApp"
+       class="w-14 h-14 rounded-full bg-[#25D366] flex items-center justify-center 
+              social-bounce hover:shadow-2xl hover:scale-110 transition-all duration-300">
+        <i class="fab fa-whatsapp text-3xl text-white"></i>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/linknetra_it?igsh=MTlscTR5dnFqdXo0dg%3D%3D" 
+       target="_blank"
+       aria-label="Instagram"
+       class="w-14 h-14 rounded-full bg-gradient-to-tr from-[#833AB4] via-[#FD1D1D] to-[#FCAF45]
+              flex items-center justify-center social-bounce hover:shadow-2xl 
+              hover:scale-110 transition-all duration-300">
+        <i class="fab fa-instagram text-3xl text-white"></i>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/company/linknetra-it-systems/" 
+       target="_blank"
+       aria-label="LinkedIn"
+       class="w-14 h-14 rounded-full bg-[#0A66C2] flex items-center justify-center 
+              social-bounce hover:shadow-2xl hover:scale-110 transition-all duration-300">
+        <i class="fab fa-linkedin-in text-3xl text-white"></i>
+    </a>
+
+</div>
+
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-2xl font-bold mb-6 text-[#27AE60]">Quick Links</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                        <li><a href="About.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="Services.html" class="hover:text-white transition">Services</a></li>
+                        <li><a href="Contact.html" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Our Services -->
+                <div>
+                    <h4 class="text-2xl font-bold mb-6 text-[#0092D6]">Our Services</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="hover:text-[#27AE60] transition">Network Security</li>
+                        <li class="hover:text-[#27AE60] transition">CCTV & Biometrics</li>
+                        <li class="hover:text-[#27AE60] transition">IT Consulting</li>
+                        <li class="hover:text-[#27AE60] transition">License Management</li>
+                        <li class="hover:text-[#27AE60] transition">Annual Maintenance</li>
+                    </ul>
+                </div>
+
+                <!-- Get in Touch -->
+                <div>
+                    <h4 class="text-2xl font-bold mb-6 text-[#27AE60]">Get in Touch</h4>
+                    <div class="space-y-4 text-gray-400 text-sm">
+                        <p class="flex items-center gap-3"><i class="fas fa-phone text-[#0092D6]"></i> +91 86688 31220</p>
+                        <p class="flex items-center gap-3"><i class="fas fa-envelope text-[#27AE60]"></i> sales@linknetra.in</p>
+                        <p class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt text-[#0092D6]"></i>
+                            H.No. 4-11-89, Jaswantpura,<br>Chh. Sambhajinagar (Aurangabad),<br>Maharashtra 431001
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-white/10 mt-16 pt-8 text-center text-gray-500 text-sm">
+                <p>© <span id="year"></span> LinkNetra IT Systems. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->    
+<script src="./assets/js/about.js"></script>
+</body>
+</html>

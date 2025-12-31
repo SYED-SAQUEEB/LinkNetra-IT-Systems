@@ -1,0 +1,293 @@
+<!DOCTYPE html> 
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | LinkNetra IT Systems</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Using a placeholder for the favicon -->
+    <link rel="icon" href="./assets/images/favicon img.png" type="image/jpeg"> 
+    <link rel="stylesheet" href="./assets/css/contact.css">
+  
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/918668831220" target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#27AE60] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-all">
+        <i class="fab fa-whatsapp text-4xl"></i>
+    </a>
+
+    <!-- Navbar (Reused from index.html) -->
+       <!-- NAVBAR - SAME AS HOMEPAGE -->
+ <header class="sticky top-0 z-50 bg-white/40 backdrop-blur-2xl border-b border-white/30 shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="flex items-center gap-4 hover:scale-105 transition-all duration-300">
+                <img src="./assets/images/Logo.jpeg" alt="LinkNetra Logo" class="h-14 md:h-16 rounded-2xl shadow-lg object-cover" loading="lazy"
+                     onerror="this.src='https://placehold.co/80x80/06314F/FFFFFF?text=LNK'">
+                <div class="leading-tight">
+                    <h1 class="text-2xl md:text-3xl font-black text-[#06314F] tracking-tighter">LINKNETRA</h1>
+                    <p class="text-[#0092D6] font-bold text-sm tracking-widest">IT SYSTEMS</p>
+                </div>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-4">
+                <a href="index.html" class="nav-pill">Home</a>
+                <a href="About.html" class="nav-pill">About</a>
+                <div class="relative">
+                    <button id="servicesToggle" class="nav-pill flex items-center gap-2">
+                        Services <i id="servicesIcon" class="fas fa-chevron-down text-sm transition-transform duration-300"></i>
+                    </button>
+                    <div id="servicesDropdown" class="dropdown-box hidden">
+                        <a href="Services.html#network" class="dropdown-link">Network Solutions</a>
+                        <a href="Services.html#cyber" class="dropdown-link">Cyber Security</a>
+                        <a href="Services.html#physical" class="dropdown-link">Physical Security</a>
+                        <a href="Services.html#consulting" class="dropdown-link">IT Consulting</a>
+                        <a href="Services.html#amc" class="dropdown-link">AMC Support</a>
+                    </div>
+                </div>
+                <a href="Contact.html" class="nav-pill">Contact</a>
+                <a href="./assets/images/linknetra IT Solution.pdf" class="px-7 py-3 rounded-full bg-gradient-to-r from-[#0092D6] to-[#27AE60] text-white font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition">
+                    Download Profile
+                </a>
+            </nav>
+
+            <button id="menu-btn" class="lg:hidden text-3xl text-[#06314F] hover:scale-110 transition">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-white/95 backdrop-blur-xl shadow-2xl border-t border-gray-200">
+            <nav class="flex flex-col py-6 px-8 space-y-4 text-lg font-medium">
+                <a href="index.html" class="py-3 hover:text-[#0092D6] transition">Home</a>
+                <a href="About.html" class="py-3 hover:text-[#0092D6] transition">About</a>
+                <details class="bg-gray-100 rounded-2xl overflow-hidden">
+                    <summary class="cursor-pointer py-4 px-6 font-bold text-[#06314F]">Services</summary>
+                    <div class="px-6 pb-4 space-y-3 bg-gray-50">
+                        <a href="Services.html" class="block py-2 hover:text-[#0092D6]">Network Solutions</a>
+                        <a href="Services.html#cyber" class="block py-2 hover:text-[#0092D6]">Cyber Security</a>
+                        <a href="Services.html#physical" class="block py-2 hover:text-[#0092D6]">Physical Security</a>
+                        <a href="Services.html#consulting" class="block py-2 hover:text-[#0092D6]">IT Consulting</a>
+                        <a href="Services.html#amc" class="block py-2 hover:text-[#0092D6]">AMC Support</a>
+                    </div>
+                </details>
+                <a href="Contact.html" class="py-3 hover:text-[#0092D6] transition">Contact</a>
+                <a href="./assets/images/linknetra IT Solution.pdf" class="py-4 bg-gradient-to-r from-[#0092D6] to-[#27AE60] text-white text-center rounded-full font-bold shadow-lg">Download Profile</a>
+            </nav>
+        </div>
+    </header>
+
+
+<!-- CONTACT HERO -->
+<section class="relative min-h-[85vh] flex items-center justify-center text-white overflow-hidden">
+
+    <!-- Background Image -->
+    <div class="absolute inset-0 -z-20">
+        <img
+            src="./assets/images/Gemini_Generated_Image_26zliy26zliy26zl.png"
+            alt="Contact LinkNetra"
+            class="w-full h-full object-cover scale-110 animate-heroZoom"
+        >
+    </div>
+
+    <!-- Gradient Overlay -->
+    <div class=""></div>
+
+    <!-- Content -->
+    <div class="container mx-auto px-6 text-center">
+        <h1 class="text-5xl md:text-7xl font-black leading-tight mb-6 animate-slideUp">
+            Get in
+            <span class="relative inline-block text-[#27AE60] animate-glow">
+                Touch
+                <span class="absolute left-0 -bottom-2 w-full h-1 bg-[#27AE60]/70 rounded-full"></span>
+            </span>
+        </h1>
+
+        <p class="text-lg md:text-2xl text-gray-300 max-w-3xl mx-auto animate-fadeIn delay-200">
+            Let’s secure your infrastructure and build smarter IT systems together.
+            Our experts are just a message away.
+        </p>
+
+        <!-- CTA -->
+        <div class="mt-10 flex justify-center gap-6 animate-fadeIn delay-400">
+            <a href="#contact"
+               class="px-8 py-4 rounded-full bg-gradient-to-r from-[#0092D6] to-[#27AE60] text-white font-bold shadow-2xl hover:scale-110 transition">
+                Contact Now
+            </a>
+            <a href="tel:+918668831220"
+               class="px-8 py-4 rounded-full border border-white/30 hover:bg-white/10 transition">
+                Call Us
+            </a>
+        </div>
+    </div>
+
+    <!-- Decorative Blur Orbs -->
+    <div class="absolute top-20 left-20 w-72 h-72 bg-[#27AE60]/20 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-20 right-20 w-72 h-72 bg-[#0092D6]/20 rounded-full blur-3xl"></div>
+</section>
+
+
+    <!-- Contact Details & Map Section -->
+    <section id="contact" class="py-20 md:py-32 bg-gray-50">
+        <div class="container mx-auto px-6">
+            
+            <!-- Contact Info Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20 max-w-6xl mx-auto">
+                
+                <!-- Card 1: Phone -->
+                <div class="contact-card bg-white p-8 rounded-2xl shadow-lg border-t-4 border-primary-blue text-center">
+                    <i class="fas fa-phone-alt text-5xl text-primary-blue mb-4"></i>
+                    <h3 class="text-2xl font-bold text-primary-dark mb-2">Call Us Anytime</h3>
+                    <p class="text-lg text-gray-700 font-semibold mb-3">+91 86688 31220</p>
+                    <p class="text-gray-500 text-sm">Dedicated support line for immediate assistance.</p>
+                </div>
+
+                <!-- Card 2: Email -->
+                <div class="contact-card bg-white p-8 rounded-2xl shadow-lg border-t-4 border-accent-green text-center">
+                    <i class="fas fa-envelope text-5xl text-accent-green mb-4"></i>
+                    <h3 class="text-2xl font-bold text-primary-dark mb-2">Send an Email</h3>
+                    <p class="text-lg text-gray-700 font-semibold mb-3">sales@linknetra.in</p>
+                    <p class="text-gray-500 text-sm">For business inquiries and service details.</p>
+                </div>
+
+                <!-- Card 3: Address -->
+                <div class="contact-card bg-white p-8 rounded-2xl shadow-lg border-t-4 border-primary-dark text-center">
+                    <i class="fas fa-map-marker-alt text-5xl text-primary-dark mb-4"></i>
+                    <h3 class="text-2xl font-bold text-primary-dark mb-2">Visit Our Office</h3>
+                    <address class="not-italic text-lg text-gray-700 font-semibold mb-3">
+                        H.No. 4-11-89, Jaswantpura, <br>Chh. Sambhajinagar (Aurangabad), <br>Maharashtra 431001
+                    </address>
+                </div>
+
+            </div>
+            
+            <!-- Map Section -->
+            <div class="max-w-7xl mx-auto rounded-3xl shadow-2xl overflow-hidden mt-16 bg-white p-4">
+                <h2 class="text-3xl md:text-4xl font-black text-center text-primary-dark mb-8">Find Us on the Map</h2>
+                
+                <!-- Map Placeholder (Replicating the image content) -->
+                <div class="relative w-full aspect-video md:h-[500px] bg-gray-200 rounded-2xl overflow-hidden">
+                    <!-- Placeholder map iframe or image -->
+                    <iframe 
+                        src="https://maps.google.com/maps?q=H.No.%204-11-89%2C%20Jaswantpura%2C%20Chh.%20Sambhajinagar%20(Aurangabad)%2C%20Maharashtra%20431001&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="LinkNetra Office Location">
+                    </iframe>
+                    <!-- Optional: Overlay text if the map doesn't load -->
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-gray-200/50 backdrop-blur-sm p-4" style="pointer-events: none;">
+                        <i class="fas fa-map-marked-alt text-6xl text-primary-dark opacity-80 mb-4"></i>
+                        <p class="text-xl font-bold text-primary-dark">Loading LinkNetra IT Systems Location...</p>
+                        <p class="text-gray-600">See address details above.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer Section (Reused from index.html) -->
+  <!-- Footer -->
+    <footer class="relative bg-[#06314F] text-white overflow-hidden">
+        <div class="footer-wave"></div>
+        <div class="container mx-auto px-6 pt-32 pb-16 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <!-- Company Info & Social -->
+                <div>
+                    <div class="flex items-center space-x-4 mb-6">
+                        <img src="img/Logo.jpeg" alt="LinkNetra" class="h-16 rounded-lg shadow-lg"
+                             onerror="this.src='https://placehold.co/64x64/FFFFFF/06314F?text=LNK';">
+                        <div>
+                            <h3 class="text-3xl font-black">LINKNETRA</h3>
+                            <p class="text-[#0092D6] font-bold text-xl">IT SYSTEMS</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Trusted IT Infrastructure & Security in Maharashtra
+                    </p>
+                   <div class="flex space-x-6 mt-8">
+    
+    <!-- WhatsApp -->
+    <a href="https://wa.me/918668831220" 
+       target="_blank"
+       aria-label="WhatsApp"
+       class="w-14 h-14 rounded-full bg-[#25D366] flex items-center justify-center 
+              social-bounce hover:shadow-2xl hover:scale-110 transition-all duration-300">
+        <i class="fab fa-whatsapp text-3xl text-white"></i>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/linknetra_it?igsh=MTlscTR5dnFqdXo0dg%3D%3D" 
+       target="_blank"
+       aria-label="Instagram"
+       class="w-14 h-14 rounded-full bg-gradient-to-tr from-[#833AB4] via-[#FD1D1D] to-[#FCAF45]
+              flex items-center justify-center social-bounce hover:shadow-2xl 
+              hover:scale-110 transition-all duration-300">
+        <i class="fab fa-instagram text-3xl text-white"></i>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/company/linknetra-it-systems/" 
+       target="_blank"
+       aria-label="LinkedIn"
+       class="w-14 h-14 rounded-full bg-[#0A66C2] flex items-center justify-center 
+              social-bounce hover:shadow-2xl hover:scale-110 transition-all duration-300">
+        <i class="fab fa-linkedin-in text-3xl text-white"></i>
+    </a>
+
+</div>
+
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-2xl font-bold mb-6 text-[#27AE60]">Quick Links</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                        <li><a href="About.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="Services.html" class="hover:text-white transition">Services</a></li>
+                        <li><a href="Contact.html" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Our Services -->
+                <div>
+                    <h4 class="text-2xl font-bold mb-6 text-[#0092D6]">Our Services</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="hover:text-[#27AE60] transition">Network Security</li>
+                        <li class="hover:text-[#27AE60] transition">CCTV & Biometrics</li>
+                        <li class="hover:text-[#27AE60] transition">IT Consulting</li>
+                        <li class="hover:text-[#27AE60] transition">License Management</li>
+                        <li class="hover:text-[#27AE60] transition">Annual Maintenance</li>
+                    </ul>
+                </div>
+
+                <!-- Get in Touch -->
+                <div>
+                    <h4 class="text-2xl font-bold mb-6 text-[#27AE60]">Get in Touch</h4>
+                    <div class="space-y-4 text-gray-400 text-sm">
+                        <p class="flex items-center gap-3"><i class="fas fa-phone text-[#0092D6]"></i> +91 86688 31220</p>
+                        <p class="flex items-center gap-3"><i class="fas fa-envelope text-[#27AE60]"></i> sales@linknetra.in</p>
+                        <p class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt text-[#0092D6]"></i>
+                            H.No. 4-11-89, Jaswantpura,<br>Chh. Sambhajinagar (Aurangabad),<br>Maharashtra 431001
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-white/10 mt-16 pt-8 text-center text-gray-500 text-sm">
+                <p>© <span id="year"></span> LinkNetra IT Systems. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/contact.js"></script>
+</body>
+</html>

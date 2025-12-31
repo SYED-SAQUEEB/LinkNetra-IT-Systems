@@ -1,0 +1,186 @@
+:root {
+    --dark: #06314F;
+    --blue: #0092D6;
+    --green: #27AE60;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.nav-pill {
+    padding: 10px 18px;
+    border-radius: 18px;
+    color: var(--dark);
+    font-weight: 600;
+    background: rgba(255,255,255,0.3);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.nav-pill:hover {
+    background: var(--blue);
+    color: white;
+    box-shadow: 0 8px 25px rgba(0,146,214,0.3);
+    transform: translateY(-2px);
+}
+
+.dropdown-box {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background: white;
+    width: 230px;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    padding: 10px 0;
+    animation: fadeDown 0.25s ease-out;
+}
+
+.dropdown-link {
+    display: block;
+    padding: 12px 20px;
+    color: var(--dark);
+    transition: 0.25s;
+    font-weight: 500;
+}
+
+.dropdown-link:hover {
+    background: var(--blue);
+    color: white;
+}
+
+.mobile-pill {
+    padding: 12px;
+    border-radius: 14px;
+    background: rgba(240, 248, 255, 0.7);
+    color: var(--dark);
+}
+
+.mobile-pill:hover {
+    background: var(--blue);
+    color: white;
+}
+
+.mobile-sub {
+    padding: 8px 0;
+    color: var(--dark);
+}
+
+.mobile-sub:hover {
+    color: var(--blue);
+}
+
+.text-primary-dark { color: var(--dark); }
+.text-primary-blue { color: var(--blue); }
+.text-accent-green { color: var(--green); }
+
+.bg-primary-dark { background-color: var(--dark); }
+.bg-primary-blue { background-color: var(--blue); }
+.bg-accent-green { background-color: var(--green); }
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-card {
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    box-shadow: 0 15px 30px rgba(6,49,79,0.15);
+    transform: translateY(-5px);
+}
+
+.footer-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 200'%3E%3Cpath fill='%2306314F' fill-opacity='1' d='M0,100L48,120C96,140,192,180,288,170C384,160,480,100,576,80C672,60,768,80,864,90C960,100,1056,100,1152,90C1248,80,1344,60,1392,50L1440,40L1440,0L0,0Z'%3E%3C/path%3E%3C/svg%3E") top/cover no-repeat;
+}
+
+/* Social media icons in footer */
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    font-size: 1.75rem;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-8px) scale(1.1);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+/* Platform-specific backgrounds */
+.social-icon.whatsapp { background: #25D366; }
+.social-icon.instagram { 
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+}
+.social-icon.twitter { background: #000000; }
+.social-icon.facebook { background: #1877F2; }
+
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* HERO ANIMATIONS */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes heroZoom {
+    from { transform: scale(1.15); }
+    to { transform: scale(1); }
+}
+
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 0 0 10px rgba(39, 174, 96, 0.6);
+    }
+    50% {
+        text-shadow: 0 0 25px rgba(39, 174, 96, 0.9);
+    }
+}
+
+/* Utility animation classes */
+.animate-slideUp {
+    animation: slideUp 1s ease-out forwards;
+}
+
+.animate-fadeIn {
+    animation: fadeIn 1.4s ease-out forwards;
+}
+
+.animate-heroZoom {
+    animation: heroZoom 6s ease-out forwards;
+}
+
+.animate-glow {
+    animation: glow 2.5s ease-in-out infinite;
+}
+
+/* Delay helpers */
+.delay-200 { animation-delay: 0.2s; }
+.delay-400 { animation-delay: 0.4s; }
